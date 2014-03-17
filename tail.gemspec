@@ -7,14 +7,14 @@ require "tail/version"
 Gem::Specification.new do |s|
   s.name        = "tail"
   s.version     = Tail::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Tail."
-  s.description = "TODO: Description of Tail."
+  s.authors     = ["Mikhail Chuprynski"]
+  s.email       = ["mikhail.chuprynski@gmail.com"]
+  s.homepage    = "http://github.com/k2m30/tail"
+  s.summary     = "Tail command via web."
+  s.description = "Provides tail functionality via browser"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.0.4"
+  s.add_dependency "rails", "~> 4.0.0"
 end

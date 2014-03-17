@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     tail (0.0.3)
-      rails (~> 4.0.4)
+      rails (~> 4.0.0)
 
 GEM
   remote: https://rubygems.org/
