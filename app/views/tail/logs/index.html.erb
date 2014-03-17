@@ -1,0 +1,24 @@
+<%= render partial: 'tail/logs/links' %>
+<hr/>
+
+<div>
+  <table class="log_table">
+    <thead>
+    <tr><th></th></tr>
+    </thead>
+    <tbody>
+    <% @files.each do |line| %>
+        <tr>
+          <td <%= 'class=error' if line.downcase.include?('error') %>>
+            <%= line %>
+          </td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+
+<hr/>
+<%= render partial: 'tail/logs/links' %>
+
+<%= javascript_tag 'window.scrollTo(0, document.body.scrollHeight);' %>

@@ -1,0 +1,7 @@
+<div class="links">
+  <%= link_to 'Less..', tail.root_path(file_name: params[:file_name], n: (params[:n].to_i/1.5).to_i) %>
+  <% @web_logger.files.each do |file| %>
+      <%= link_to file, tail.root_path(file_name: file, n: params[:n]) %>
+  <% end %>
+  <%= link_to 'More..', tail.root_path(file_name: params[:file_name], n: (1.5 * params[:n].to_i).to_i) %>
+</div>

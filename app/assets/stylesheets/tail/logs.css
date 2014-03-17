@@ -1,0 +1,31 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+.links {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.links a {
+    color: rgb(0, 136, 204);
+}
+
+.links a:visited {
+    color: rgb(0, 85, 128);
+}
+
+.log_table {
+    width: 100%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.log_table td, th {
+    border-bottom: 1px dashed lightgray;
+    padding: 5px;
+}
+
+td.error {
+    color: #ac0000;
+}
