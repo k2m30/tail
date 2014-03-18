@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["mikhail.chuprynski@gmail.com"]
   s.homepage    = "http://github.com/k2m30/tail"
   s.summary     = "Tail command via web."
-  s.description = "Provides tail functionality via browser"
+  s.description = "This gem provides *nix systems `tail` command functionality for your Rails application. If something goes wrong you don't have to ssh to your server anymore. Now you have normal scroll and search in browser instead of `nano`, `eamacs`, `vim`, `mcedit` - name it."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]

@@ -1,6 +1,6 @@
 ##Description
 
-This gem provides *nix systems `tail` command functionality.
+This gem provides *nix systems `tail` command functionality for your Rails application.
 If something goes wrong you don't have to ssh to your server anymore. Now you have normal scroll and search in browser instead of `nano`, `eamacs`, `vim`, `mcedit` - name it
 
 Also it highlights with red any log stings which includes 'error'.
