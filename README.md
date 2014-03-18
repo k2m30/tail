@@ -3,6 +3,8 @@
 This gem provides *nix systems `tail` command functionality.
 If something goes wrong you don't have to ssh to your server anymore. Now you have normal scroll and search in browser instead of `nano`, `eamacs`, `vim`, `mcedit` - name it
 
+Also it highlights with red any log stings which includes 'error'.
+
 ##Installation
 
 Just run
