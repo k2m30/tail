@@ -3,6 +3,7 @@ require_dependency "tail/application_controller"
 module Tail
   class LogsController < ApplicationController
     before_filter :authenticate_user! if defined? Devise
+
     def index
       @web_logger ||= Log.instance
       @web_logger.n = params[:n]
