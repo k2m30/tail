@@ -1,0 +1,18 @@
+<div id="main">
+  <table class="log_table">
+    <thead>
+    <tr>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @files.each do |line| %>
+        <tr>
+          <td <%= 'class=error' if line.downcase.include?('error') || (params[:query].present? && line.downcase.include?(params[:query])) %>>
+            <%= line %>
+          </td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

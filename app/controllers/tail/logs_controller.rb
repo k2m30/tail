@@ -10,8 +10,8 @@ module Tail
     end
 
     def grep
-      query = params[:query] || ''
       @files = tail
+      render '_main'
     end
 
     def tail

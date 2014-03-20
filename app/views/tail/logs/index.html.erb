@@ -1,24 +1,14 @@
-<%= render partial: 'tail/logs/links' %>
-<hr/>
+<%= render partial: 'main' %>
 
-<div id="main">
-  <table class="log_table">
-    <thead>
-    <tr><th></th></tr>
-    </thead>
-    <tbody>
-    <% @files.each do |line| %>
-        <tr>
-          <td <%= 'class=error' if line.downcase.include?('error') %>>
-            <%= line %>
-          </td>
-        </tr>
-    <% end %>
-    </tbody>
-  </table>
+<hr/>
+<div class="links">
+  <%= link_to 'Less..', tail.root_path(file_name: params[:file_name], n: (params[:n].to_i/1.5).to_i), id: 'less' %>
+  <% @web_logger.files.each do |file| %>
+      <%= link_to file, tail.root_path(file_name: file, n: params[:n]) %>
+  <% end %>
+  <%= link_to 'More..', tail.root_path(file_name: params[:file_name], n: (1.5 * params[:n].to_i).to_i), style: 'margin-right: 20px', id: 'more' %>
+  <%= text_field_tag :grep, nil, autofocus: true, onkeyup: 'getGrep(this.value)' %>
 </div>
 
-<hr/>
-<%= render partial: 'tail/logs/links' %>
 
 <%= javascript_tag 'window.scrollTo(0, document.body.scrollHeight);' %>

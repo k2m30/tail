@@ -3,8 +3,8 @@
 function getGrep(text) {
     var sign;
     if (location.search == "") sign = "?"; else sign = "&";
-    var query = location.pathname + 'grep' + location.search + sign + 'query=' + text;
-    console.log(text=='');
+    var search = sign + 'query=' + text;
+    var query = location.pathname + 'grep' + location.search + search;
     sendRequest(query)
 }
 
