@@ -17,7 +17,7 @@ run `bundle install` and mount it at your `config/routes.rb` like this:
 
 After this, you will see all your .log files available at /tail path.
 
-Of course, you can mount it at: `"/whatevername"` you like.
+Of course, you can mount it `at: "/whatevername"` you like.
 
 If you use Devise for authentication, gem will use it also.
 
