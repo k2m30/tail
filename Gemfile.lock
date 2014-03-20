@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tail (0.0.8)
+    tail (0.0.9)
       rails (~> 4.0.0)
 
 GEM
