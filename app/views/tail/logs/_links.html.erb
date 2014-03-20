@@ -4,4 +4,6 @@
       <%= link_to file, tail.root_path(file_name: file, n: params[:n]) %>
   <% end %>
   <%= link_to 'More..', tail.root_path(file_name: params[:file_name], n: (1.5 * params[:n].to_i).to_i) %>
+
+  <%= text_field_tag :grep, nil, autofocus: true, onkeyup: 'getGrep(this.value)' %>
 </div>
