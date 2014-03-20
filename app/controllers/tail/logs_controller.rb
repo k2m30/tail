@@ -11,11 +11,11 @@ module Tail
 
     def grep
       query = params[:query] || ''
-      @files = tail.select{|str| str.include?(query)}
+      @files = tail
     end
 
     def tail
-      @web_logger ||= Log.instance
+      @web_logger ||= Tail::Log.instance
       @web_logger.n = params[:n]
       params[:n] = @web_logger.n
       log_file_name = params[:file_name] || "#{Rails.env}.log"
