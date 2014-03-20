@@ -7,11 +7,11 @@ Also it highlights with red any log stings which includes 'error'.
 
 ##Installation
 
-Just run
+Just include it into your Gemfile
 
-    gem install tail
+    gem 'tail'
 
-and mount it at your `config/routes.rb` like this:
+run `bundle install` and mount it at your `config/routes.rb` like this:
 
     mount Tail::Engine, at: "/tail"
 
