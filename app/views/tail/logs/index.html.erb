@@ -1,7 +1,8 @@
 <%= render partial: 'main' %>
 
-<hr/>
-<div class="links">
+
+<div class="links" style="">
+
   <%= link_to 'Less..', tail.root_path(file_name: params[:file_name], n: (params[:n].to_i/1.5).to_i), id: 'less' %>
   <% @web_logger.files.each do |file| %>
       <%= link_to file, tail.root_path(file_name: file, n: params[:n]) %>
