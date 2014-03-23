@@ -1,0 +1,9 @@
+<div id="refresh">
+  <%= link_to image_tag('tail/refresh.png', title: 'Refresh page'), tail.root_path(file_name: params[:file_name], n: params[:n]) %>
+</div>
+
+<% if params[:file_name].nil? || params[:file_name] == "#{Rails.env}.log" %>
+    <div id="flush">
+      <%= link_to image_tag('tail/warning.png', title: 'Flush log file' ), tail.flush_path %>
+    </div>
+<% end %>
