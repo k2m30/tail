@@ -15,13 +15,23 @@ module Tail
       end
     end
 
+    def flush(file_name)
+      begin
+        f = File.open "log/#{Rails.env}.log", 'w'
+        f.close
+          Rails.logger.warn "#{Rails.env}.log flushed"
+      rescue => e
+        Rails.logger.error(e.message)
+        Rails.logger.error(e.backtrace[0..3].join("\n"))
+      end
+    end
+
     def n=(value)
       if value.present? && value.to_i > 0
         @n =value.to_i
       else
         @n = N_VALUE
       end
-
     end
 
     # @return [log entries array]

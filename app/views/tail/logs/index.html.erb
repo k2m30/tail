@@ -1,15 +1,24 @@
+<%= content_for :title, params[:file_name] || "#{Rails.env}.log" %>
+
 <%= render partial: 'main' %>
 
-
 <div class="links" style="">
-
   <%= link_to 'Less..', tail.root_path(file_name: params[:file_name], n: (params[:n].to_i/1.5).to_i), id: 'less' %>
   <% @web_logger.files.each do |file| %>
       <%= link_to file, tail.root_path(file_name: file, n: params[:n]) %>
   <% end %>
-  <%= link_to 'More..', tail.root_path(file_name: params[:file_name], n: (1.5 * params[:n].to_i).to_i), style: 'margin-right: 20px', id: 'more' %>
-  <%= text_field_tag :grep, nil, autofocus: true, onkeyup: 'getGrep(this.value)' %>
+  <%= link_to 'More..', tail.root_path(file_name: params[:file_name], n: (1.5 * params[:n].to_i).to_i), id: 'more' %>
+  <%= text_field_tag :grep, nil, autofocus: true, onkeyup: 'javascript:getGrep(this.value)' %>
 </div>
+<div id="refresh">
+  <%= link_to image_tag('tail/refresh.png', title: 'Refresh page'), tail.root_path(file_name: params[:file_name], n: params[:n]) %>
+</div>
+
+<% if params[:file_name].nil? || params[:file_name] == "#{Rails.env}.log" %>
+    <div id="flush">
+      <%= link_to image_tag('tail/warning.png', title: 'Flush log file' ), tail.flush_path %>
+    </div>
+<% end %>
 
 
 <%= javascript_tag 'window.scrollTo(0, document.body.scrollHeight);' %>
