@@ -4,6 +4,6 @@
 
 <% if params[:file_name].nil? || params[:file_name] == "#{Rails.env}.log" %>
     <div id="flush">
-      <%= link_to image_tag('tail/warning.png', title: 'Flush log file' ), tail.flush_path %>
+      <%= link_to image_tag('tail/cleaning.png', title: 'Flush log file' ), tail.flush_path %>
     </div>
 <% end %>

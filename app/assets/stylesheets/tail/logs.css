@@ -68,3 +68,12 @@ input {
 #more {
     margin-right: 20px
 }
+
+#up {
+    position: fixed;
+    top: 50px;
+    right: 32px;
+    opacity: 0.45;
+    background-color: white;
+    border-radius: 2px
+}
