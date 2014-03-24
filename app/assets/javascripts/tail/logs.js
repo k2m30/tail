@@ -11,16 +11,6 @@ function initApplication(){
 
     onscroll = function () {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-
-        if (scrollTop < -5) {
-            console.log('scrolled', scrollTop, appended);
-            var old_value = parseInt(getPageVar('n'));
-            var new_value = (old_value * 1.1).toFixed();
-
-            var query = location.pathname + 'grep' + location.search.replace('n=' + old_value, 'n=' + new_value);
-//            sendRequest(query, false)
-            console.log('scrolled', query);
-        }
         if (scrollTop > 500) {
             if (!appended) {
                 up_arrow.hidden = false;
