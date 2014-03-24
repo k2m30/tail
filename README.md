@@ -5,6 +5,9 @@ If something goes wrong you don't have to ssh to your server anymore. Now you ha
 
 Also it highlights with red any log stings which include query you've entered.
 
+![How it works](how_it_works.tiff)
+
+
 ##Installation
 
 Just include it into your Gemfile
