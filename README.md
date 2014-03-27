@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/tail.png)](http://badge.fury.io/rb/tail)
+
 ##Description
 
 This gem provides *nix systems `tail` command functionality for your Rails application.
