@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/tail.png)](http://badge.fury.io/rb/tail)
+[![Code Climate](https://codeclimate.com/github/k2m30/tail.png)](https://codeclimate.com/github/k2m30/tail)
 
 ##Description
 
