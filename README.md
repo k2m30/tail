@@ -34,7 +34,7 @@ Ruby 1.9.3+
 
 Rails 4.0+
 
-No other gems required.
+No other gems required. No jQuery or any JS frameworks required.
 
 ##License
 
