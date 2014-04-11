@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tail (0.1.4)
+    tail (0.1.5)
       rails (>= 4.0)
 
 GEM
@@ -32,7 +32,6 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
-    atomic (1.1.16)
     builder (3.1.4)
     erubis (2.7.0)
     hike (1.2.3)
@@ -60,7 +59,7 @@ GEM
       activesupport (= 4.0.4)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.2.0)
+    rake (10.2.2)
     sprockets (2.12.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -71,8 +70,7 @@ GEM
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     thor (0.19.1)
-    thread_safe (0.3.1)
-      atomic (>= 1.1.7, < 2)
+    thread_safe (0.3.3)
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
