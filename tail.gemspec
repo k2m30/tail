@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.post_install_message = "Don't forget to mount gem (routes.rb) like this: mount Tail::Engine, at: \"/tail\" "
 
 
-  s.add_dependency "rails", ">= 4.0"
+  s.add_dependency "rails", ">= 3.2"
   s.required_ruby_version = ">= 1.9.3"
 end

@@ -32,7 +32,7 @@ Any *nix (including Mac OS) system.
 
 Ruby 1.9.3+
 
-Rails 4.0+
+Rails 3.2+
 
 No other gems required. No jQuery or any JS frameworks required.
 
